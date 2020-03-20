@@ -4,23 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gregor H. A. Web Portfolio</title>
+    <style>
+        body{
+            font-family: "Roboto", Arial, Tahoma, sans-serif;
+        }
+        .header{
+            position:fixed;
+            width: 100%;
+            margin: 0 50 0 0;
+            background-color: #EEE;
+            top:0px;
+            
+        }
+        .content{
+            margin-top: 100px;
+        }
+        .header-nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-element{
+            float: left;
+            margin: 10px;
+        }
+        li a{
+            display: block;
+            line-height: 60px;
+            padding: 0 20px;
+            white-space: nowrap;
+            color: #000000;
+            text-decoration: none;
+        }
+        li a:hover{
+            color: #888888;
+
+        }
+        li a:active{
+            color: #888000;
+
+        }
+        #logo{
+            padding-top: 9px;
+        }
+        footer{
+            background-color: #EEE;
+            height:200px;
+            align-items: center;
+        }
+        .section{
+            display: flex;
+            justify-content: space-around;
+            margin: 70px;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li><a href=#qualidades>Qualidades</a></li>
-        <li><a href="#link-importante">Importante</a></li>
-    </ul>
-    <h1>Gregor Hammerschmitt Andrade</h1>
-    <img src = "/images/download.jpeg" alt="Foto do Gregor" id="doguito" width="600">
-    <p>Aluno tryber de Florianópolis</p>
-    <h2 id = "qualidades">Qualidades</h2>
-    <ul>
-        <li>Aluno</li>
-        <li><strong>Tryber</strong></li>
-        <li>Florianopolitano</li>
-    </ul>
-    <a href="#doguito">Go back to that beautiful dog</a>
-    <h2 id="link-importante">Recomendações</h2>
-        <a href="https://www.youtube.com/watch?v=BJe87NMxZLY" target="_blank"><em>Lave as mãos</em></a>
+    <div class="header">
+        <ul class=header-nav>
+            <li class="nav-element" id="logo"><a href="#top"><img src = "/images/GHA.png" alt="GHA" height="25px"></a></li>
+            <li class="nav-element"><a href="#about">About</a></li>
+            <li class="nav-element"><a href="#skills">Skills</a></li>
+            <li class="nav-element"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-element"><a href="#education">Education</a></li>
+            <li class="nav-element" style="float:right"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">  
+        <div class="section"> 
+            <div class="sub-section">
+                <h1>Gregor Hammerschmitt Andrade</h1>
+                <p>Future Full Stack Developer, have done many things in my life<br> From Civil Engineer student to Tattoo Artist<br> Finally founding my passion in web development</p>
+            </div>
+            <div class="sub-section">
+                <img src = "/images/download.jpeg" alt="Foto do Gregor" id="doguito" width="300" style="border-radius: 50%;">
+            </div>         
+        </div>
+        <h2 id = "about">Qualidades</h2>
+        <ul>
+            <li>Aluno</li>
+            <li><strong>Tryber</strong></li>
+            <li>Florianopolitano</li>
+        </ul>
+        <a href="#doguito">Go back to that beautiful dog</a>
+        <h2 id="skills">Skills</h2>
+            <a href="https://www.youtube.com/watch?v=BJe87NMxZLY" target="_blank"><em>Lave as mãos</em></a>
+        <h2 id="portfolio">Portfolio</h2>
+        <h2 id="education">Education</h2>
+        <h2 id="contact">Contact</h2>
+        
+    </div>
+    <footer><div class="widgets_wrapper"><h2>Contact</h2><h4 style="font-weight: 400;">hammerschmittgregor2@gmail.com</h4>
 </body>
-</html>                                                   
+</html>                                                    
